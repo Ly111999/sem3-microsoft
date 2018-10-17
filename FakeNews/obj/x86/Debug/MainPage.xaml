@@ -62,12 +62,13 @@
                 <GridView x:ConnectionId='6' Name="NewsItemGrid"                                  HorizontalAlignment="Stretch" Margin="10,0,0,0">
                     <GridView.ItemTemplate>
                         <DataTemplate                           >
-                            <Grid x:ConnectionId='7' Background="White" Margin="10" Height="275" Width="300">
+                            <Grid x:ConnectionId='7' Background="White" Margin="10" Height="275" Width="200">
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="Auto"/>
                                     <RowDefinition Height="*"/>
                                 </Grid.RowDefinitions>
-                                <Image x:ConnectionId='8' Name="myImage"                        />
+                                <Image x:ConnectionId='8' Name="MyImage"                        />
+
                                 <RelativePanel Grid.Row="1">
                                     <TextBlock x:ConnectionId='9'                         />
                                     <TextBlock x:ConnectionId='10'                        />

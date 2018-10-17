@@ -12,7 +12,7 @@
     <Page.Resources>
         <DataTemplate                         x:Key="DrinkDataTemplate">
             <StackPanel x:ConnectionId='2' HorizontalAlignment="Center" >
-                <Image x:ConnectionId='3' Width="150"                             />
+                <Image x:ConnectionId='3' Width="150" Height="120"                             />
                 <TextBlock x:ConnectionId='4' FontSize="16"                      HorizontalAlignment="Center"/>
                 <TextBlock x:ConnectionId='5' FontSize="10"                       HorizontalAlignment="Center"/>
             </StackPanel>

@@ -12,7 +12,7 @@
     <Page.Resources>
         <DataTemplate x:DataType="data:Drink" x:Key="DrinkDataTemplate">
             <StackPanel HorizontalAlignment="Center" >
-                <Image Width="150" Source="{x:Bind CoverImage}"/>
+                <Image Width="150" Height="120" Source="{x:Bind CoverImage}"/>
                 <TextBlock FontSize="16" Text="{x:Bind Name}" HorizontalAlignment="Center"/>
                 <TextBlock FontSize="10" Text="{x:Bind Price}" HorizontalAlignment="Center"/>
             </StackPanel>
