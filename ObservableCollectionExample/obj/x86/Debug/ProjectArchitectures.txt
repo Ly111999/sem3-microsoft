@@ -1,0 +1,1 @@
+C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\ObservableCollectionExample\ObservableCollectionExample.csproj;x86

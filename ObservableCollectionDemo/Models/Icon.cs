@@ -8,5 +8,6 @@ namespace ObservableCollectionDemo.Models
 {
     class Icon
     {
+        public string IconPath { get; set; }
     }
 }
