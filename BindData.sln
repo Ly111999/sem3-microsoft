@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObservableCollectionExample
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UWPSoundBoard", "UWPSoundBoard\UWPSoundBoard.csproj", "{D81C7F78-80C1-4AFC-9B8A-36D29C726AC9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YoutubeApp", "YoutubeApp\YoutubeApp.csproj", "{D1F0311D-43BB-407B-8CB2-22DF3756E510}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
@@ -113,6 +115,24 @@ Global
 		{D81C7F78-80C1-4AFC-9B8A-36D29C726AC9}.Release|x86.ActiveCfg = Release|x86
 		{D81C7F78-80C1-4AFC-9B8A-36D29C726AC9}.Release|x86.Build.0 = Release|x86
 		{D81C7F78-80C1-4AFC-9B8A-36D29C726AC9}.Release|x86.Deploy.0 = Release|x86
+		{D1F0311D-43BB-407B-8CB2-22DF3756E510}.Debug|ARM.ActiveCfg = Debug|ARM
+		{D1F0311D-43BB-407B-8CB2-22DF3756E510}.Debug|ARM.Build.0 = Debug|ARM
+		{D1F0311D-43BB-407B-8CB2-22DF3756E510}.Debug|ARM.Deploy.0 = Debug|ARM
+		{D1F0311D-43BB-407B-8CB2-22DF3756E510}.Debug|x64.ActiveCfg = Debug|x64
+		{D1F0311D-43BB-407B-8CB2-22DF3756E510}.Debug|x64.Build.0 = Debug|x64
+		{D1F0311D-43BB-407B-8CB2-22DF3756E510}.Debug|x64.Deploy.0 = Debug|x64
+		{D1F0311D-43BB-407B-8CB2-22DF3756E510}.Debug|x86.ActiveCfg = Debug|x86
+		{D1F0311D-43BB-407B-8CB2-22DF3756E510}.Debug|x86.Build.0 = Debug|x86
+		{D1F0311D-43BB-407B-8CB2-22DF3756E510}.Debug|x86.Deploy.0 = Debug|x86
+		{D1F0311D-43BB-407B-8CB2-22DF3756E510}.Release|ARM.ActiveCfg = Release|ARM
+		{D1F0311D-43BB-407B-8CB2-22DF3756E510}.Release|ARM.Build.0 = Release|ARM
+		{D1F0311D-43BB-407B-8CB2-22DF3756E510}.Release|ARM.Deploy.0 = Release|ARM
+		{D1F0311D-43BB-407B-8CB2-22DF3756E510}.Release|x64.ActiveCfg = Release|x64
+		{D1F0311D-43BB-407B-8CB2-22DF3756E510}.Release|x64.Build.0 = Release|x64
+		{D1F0311D-43BB-407B-8CB2-22DF3756E510}.Release|x64.Deploy.0 = Release|x64
+		{D1F0311D-43BB-407B-8CB2-22DF3756E510}.Release|x86.ActiveCfg = Release|x86
+		{D1F0311D-43BB-407B-8CB2-22DF3756E510}.Release|x86.Build.0 = Release|x86
+		{D1F0311D-43BB-407B-8CB2-22DF3756E510}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
