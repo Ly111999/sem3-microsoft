@@ -6,9 +6,26 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
+   
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <StackPanel Background="White">
+            <!--<Button Content="Get 5 days weather" Click="Button_Click"></Button>-->
+            <GridView ItemsSource="{Binding collection}" x:Name="ForeCasGridView">
+                <GridView.ItemTemplate>
+                    <DataTemplate>
+                        <ScrollViewer>
+                            <StackPanel Width="240">
+                                <TextBlock Name="DataText" Text="{Binding dt_txt}"/>
+                                <TextBlock Name="TempText" Text="{Binding main.temp}"/>
+                                <TextBlock Name="DescriptionText" Text="{Binding weather[0].description}"/>
+                            </StackPanel>
+                        </ScrollViewer>
 
+                    </DataTemplate>
+                </GridView.ItemTemplate>
+            </GridView>
+        </StackPanel>
     </Grid>
 </Page>

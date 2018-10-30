@@ -75,16 +75,6 @@
                                        Margin="20,0,0,0"/>
                         </StackPanel>
                     </ListBoxItem>
-                    <ListBoxItem Name="WeatherTen">
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="&#xEA91;"
-                                       FontFamily="Segoe MDL2 Assets"
-                                       FontSize="20"/>
-                            <TextBlock Text="WeatherTen"
-                                       FontSize="18"
-                                       Margin="20,0,0,0"/>
-                        </StackPanel>
-                    </ListBoxItem>
                 </ListBox>
             </SplitView.Pane>
             <SplitView.Content>

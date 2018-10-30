@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -25,6 +27,26 @@ namespace WeatherSplitview
         public WeatherFive()
         {
             this.InitializeComponent();
+            collection = new ObservableCollection<List>();
+            this.DataContext = this;
+        }
+
+        public ObservableCollection<List> collection { get; set; }
+
+        private async void Load_Page(object sender, RoutedEventArgs e)
+        {
+            var position = await LocationData.GetPosition();
+            var lon = position.Coordinate.Longitude;
+            var lat = position.Coordinate.Latitude;
+
+
+            RootObject forecast = await APIManager.GetWeather(lat, lon);
+            for (int i = 0; i < forecast.list.Count; i++)
+            {
+                collection.Add(forecast.list[i]);
+            }
+
+            ForeCasGridView.ItemsSource = collection;
         }
     }
 }

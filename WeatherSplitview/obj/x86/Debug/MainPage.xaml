@@ -14,7 +14,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <RelativePanel>
-            <Button x:ConnectionId='8' Name="HamburgerButton"
+            <Button x:ConnectionId='7' Name="HamburgerButton"
                     RelativePanel.AlignBottomWithPanel="True"
                                                  
                     FontFamily="Segoe MDL2 Assets"
@@ -23,7 +23,7 @@
                     Width="45"
                     Content="&#xE700;"/>
 
-            <Button x:ConnectionId='9' Name="BackButton"
+            <Button x:ConnectionId='8' Name="BackButton"
                     RelativePanel.AlignBottomWithPanel="True"
                                             
                     FontFamily="Segoe MDL2 Assets"
@@ -31,14 +31,14 @@
                     Height="45"
                     Width="45"
                     Content="&#xE0A6;" RelativePanel.RightOf="HamburgerButton"/>
-            <TextBlock x:ConnectionId='10' Name="TitleTextBlock"
+            <TextBlock x:ConnectionId='9' Name="TitleTextBlock"
                        RelativePanel.RightOf="BackButton"
                        FontSize="26"
                        FontWeight="Bold"
                        Margin="20,5,0,0"/>
 
 
-            <AutoSuggestBox x:ConnectionId='11' Name="SearchAutoSuggestBox"
+            <AutoSuggestBox x:ConnectionId='10' Name="SearchAutoSuggestBox"
                             PlaceholderText="Search for sounds"
                             Width="200"                        
                             QueryIcon="Find"
@@ -75,20 +75,10 @@
                                        Margin="20,0,0,0"/>
                         </StackPanel>
                     </ListBoxItem>
-                    <ListBoxItem x:ConnectionId='6' Name="WeatherTen">
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="&#xEA91;"
-                                       FontFamily="Segoe MDL2 Assets"
-                                       FontSize="20"/>
-                            <TextBlock Text="WeatherTen"
-                                       FontSize="18"
-                                       Margin="20,0,0,0"/>
-                        </StackPanel>
-                    </ListBoxItem>
                 </ListBox>
             </SplitView.Pane>
             <SplitView.Content>
-                <Frame x:ConnectionId='7'  Name="MyFrame"/>
+                <Frame x:ConnectionId='6'  Name="MyFrame"/>
             </SplitView.Content>
         </SplitView>
     </Grid>

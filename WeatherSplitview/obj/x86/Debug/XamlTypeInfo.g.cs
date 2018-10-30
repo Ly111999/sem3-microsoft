@@ -189,19 +189,45 @@ namespace WeatherSplitview.WeatherSplitview_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[5];
+            _typeNameTable = new string[18];
             _typeNameTable[0] = "WeatherSplitview.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[3] = "WeatherSplitview.WeatherFive";
-            _typeNameTable[4] = "WeatherSplitview.WeatherOne";
+            _typeNameTable[4] = "System.Collections.ObjectModel.ObservableCollection`1<WeatherSplitview.List>";
+            _typeNameTable[5] = "System.Collections.ObjectModel.Collection`1<WeatherSplitview.List>";
+            _typeNameTable[6] = "Object";
+            _typeNameTable[7] = "WeatherSplitview.List";
+            _typeNameTable[8] = "Int32";
+            _typeNameTable[9] = "WeatherSplitview.Main";
+            _typeNameTable[10] = "System.Collections.Generic.List`1<WeatherSplitview.Weather>";
+            _typeNameTable[11] = "WeatherSplitview.Weather";
+            _typeNameTable[12] = "String";
+            _typeNameTable[13] = "WeatherSplitview.Clouds";
+            _typeNameTable[14] = "WeatherSplitview.Wind";
+            _typeNameTable[15] = "WeatherSplitview.Rain";
+            _typeNameTable[16] = "WeatherSplitview.Sys";
+            _typeNameTable[17] = "WeatherSplitview.WeatherOne";
 
-            _typeTable = new global::System.Type[5];
+            _typeTable = new global::System.Type[18];
             _typeTable[0] = typeof(global::WeatherSplitview.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[3] = typeof(global::WeatherSplitview.WeatherFive);
-            _typeTable[4] = typeof(global::WeatherSplitview.WeatherOne);
+            _typeTable[4] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::WeatherSplitview.List>);
+            _typeTable[5] = typeof(global::System.Collections.ObjectModel.Collection<global::WeatherSplitview.List>);
+            _typeTable[6] = typeof(global::System.Object);
+            _typeTable[7] = typeof(global::WeatherSplitview.List);
+            _typeTable[8] = typeof(global::System.Int32);
+            _typeTable[9] = typeof(global::WeatherSplitview.Main);
+            _typeTable[10] = typeof(global::System.Collections.Generic.List<global::WeatherSplitview.Weather>);
+            _typeTable[11] = typeof(global::WeatherSplitview.Weather);
+            _typeTable[12] = typeof(global::System.String);
+            _typeTable[13] = typeof(global::WeatherSplitview.Clouds);
+            _typeTable[14] = typeof(global::WeatherSplitview.Wind);
+            _typeTable[15] = typeof(global::WeatherSplitview.Rain);
+            _typeTable[16] = typeof(global::WeatherSplitview.Sys);
+            _typeTable[17] = typeof(global::WeatherSplitview.WeatherOne);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -238,7 +264,35 @@ namespace WeatherSplitview.WeatherSplitview_XamlTypeInfo
 
         private object Activate_0_MainPage() { return new global::WeatherSplitview.MainPage(); }
         private object Activate_3_WeatherFive() { return new global::WeatherSplitview.WeatherFive(); }
-        private object Activate_4_WeatherOne() { return new global::WeatherSplitview.WeatherOne(); }
+        private object Activate_4_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::WeatherSplitview.List>(); }
+        private object Activate_5_Collection() { return new global::System.Collections.ObjectModel.Collection<global::WeatherSplitview.List>(); }
+        private object Activate_7_List() { return new global::WeatherSplitview.List(); }
+        private object Activate_9_Main() { return new global::WeatherSplitview.Main(); }
+        private object Activate_10_List() { return new global::System.Collections.Generic.List<global::WeatherSplitview.Weather>(); }
+        private object Activate_11_Weather() { return new global::WeatherSplitview.Weather(); }
+        private object Activate_13_Clouds() { return new global::WeatherSplitview.Clouds(); }
+        private object Activate_14_Wind() { return new global::WeatherSplitview.Wind(); }
+        private object Activate_15_Rain() { return new global::WeatherSplitview.Rain(); }
+        private object Activate_16_Sys() { return new global::WeatherSplitview.Sys(); }
+        private object Activate_17_WeatherOne() { return new global::WeatherSplitview.WeatherOne(); }
+        private void VectorAdd_4_ObservableCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::WeatherSplitview.List>)instance;
+            var newItem = (global::WeatherSplitview.List)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_5_Collection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::WeatherSplitview.List>)instance;
+            var newItem = (global::WeatherSplitview.List)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_10_List(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::WeatherSplitview.Weather>)instance;
+            var newItem = (global::WeatherSplitview.Weather)item;
+            collection.Add(newItem);
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -268,13 +322,108 @@ namespace WeatherSplitview.WeatherSplitview_XamlTypeInfo
             case 3:   //  WeatherSplitview.WeatherFive
                 userType = new global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_3_WeatherFive;
+                userType.AddMemberName("collection");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  WeatherSplitview.WeatherOne
+            case 4:   //  System.Collections.ObjectModel.ObservableCollection`1<WeatherSplitview.List>
+                userType = new global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<WeatherSplitview.List>"));
+                userType.CollectionAdd = VectorAdd_4_ObservableCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 5:   //  System.Collections.ObjectModel.Collection`1<WeatherSplitview.List>
+                userType = new global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_5_Collection;
+                userType.CollectionAdd = VectorAdd_5_Collection;
+                xamlType = userType;
+                break;
+
+            case 6:   //  Object
+                xamlType = new global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 7:   //  WeatherSplitview.List
+                userType = new global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_7_List;
+                userType.AddMemberName("dt");
+                userType.AddMemberName("main");
+                userType.AddMemberName("weather");
+                userType.AddMemberName("clouds");
+                userType.AddMemberName("wind");
+                userType.AddMemberName("rain");
+                userType.AddMemberName("sys");
+                userType.AddMemberName("dt_txt");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 8:   //  Int32
+                xamlType = new global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 9:   //  WeatherSplitview.Main
+                userType = new global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 10:   //  System.Collections.Generic.List`1<WeatherSplitview.Weather>
+                userType = new global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.CollectionAdd = VectorAdd_10_List;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 11:   //  WeatherSplitview.Weather
+                userType = new global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_11_Weather;
+                userType.AddMemberName("id");
+                userType.AddMemberName("main");
+                userType.AddMemberName("description");
+                userType.AddMemberName("icon");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 12:   //  String
+                xamlType = new global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 13:   //  WeatherSplitview.Clouds
+                userType = new global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 14:   //  WeatherSplitview.Wind
+                userType = new global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 15:   //  WeatherSplitview.Rain
+                userType = new global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 16:   //  WeatherSplitview.Sys
+                userType = new global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 17:   //  WeatherSplitview.WeatherOne
                 userType = new global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_WeatherOne;
+                userType.Activator = Activate_17_WeatherOne;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -283,11 +432,223 @@ namespace WeatherSplitview.WeatherSplitview_XamlTypeInfo
         }
 
 
+        private object get_0_WeatherFive_collection(object instance)
+        {
+            var that = (global::WeatherSplitview.WeatherFive)instance;
+            return that.collection;
+        }
+        private void set_0_WeatherFive_collection(object instance, object Value)
+        {
+            var that = (global::WeatherSplitview.WeatherFive)instance;
+            that.collection = (global::System.Collections.ObjectModel.ObservableCollection<global::WeatherSplitview.List>)Value;
+        }
+        private object get_1_List_dt(object instance)
+        {
+            var that = (global::WeatherSplitview.List)instance;
+            return that.dt;
+        }
+        private void set_1_List_dt(object instance, object Value)
+        {
+            var that = (global::WeatherSplitview.List)instance;
+            that.dt = (global::System.Int32)Value;
+        }
+        private object get_2_List_main(object instance)
+        {
+            var that = (global::WeatherSplitview.List)instance;
+            return that.main;
+        }
+        private void set_2_List_main(object instance, object Value)
+        {
+            var that = (global::WeatherSplitview.List)instance;
+            that.main = (global::WeatherSplitview.Main)Value;
+        }
+        private object get_3_List_weather(object instance)
+        {
+            var that = (global::WeatherSplitview.List)instance;
+            return that.weather;
+        }
+        private void set_3_List_weather(object instance, object Value)
+        {
+            var that = (global::WeatherSplitview.List)instance;
+            that.weather = (global::System.Collections.Generic.List<global::WeatherSplitview.Weather>)Value;
+        }
+        private object get_4_Weather_id(object instance)
+        {
+            var that = (global::WeatherSplitview.Weather)instance;
+            return that.id;
+        }
+        private void set_4_Weather_id(object instance, object Value)
+        {
+            var that = (global::WeatherSplitview.Weather)instance;
+            that.id = (global::System.Int32)Value;
+        }
+        private object get_5_Weather_main(object instance)
+        {
+            var that = (global::WeatherSplitview.Weather)instance;
+            return that.main;
+        }
+        private void set_5_Weather_main(object instance, object Value)
+        {
+            var that = (global::WeatherSplitview.Weather)instance;
+            that.main = (global::System.String)Value;
+        }
+        private object get_6_Weather_description(object instance)
+        {
+            var that = (global::WeatherSplitview.Weather)instance;
+            return that.description;
+        }
+        private void set_6_Weather_description(object instance, object Value)
+        {
+            var that = (global::WeatherSplitview.Weather)instance;
+            that.description = (global::System.String)Value;
+        }
+        private object get_7_Weather_icon(object instance)
+        {
+            var that = (global::WeatherSplitview.Weather)instance;
+            return that.icon;
+        }
+        private void set_7_Weather_icon(object instance, object Value)
+        {
+            var that = (global::WeatherSplitview.Weather)instance;
+            that.icon = (global::System.String)Value;
+        }
+        private object get_8_List_clouds(object instance)
+        {
+            var that = (global::WeatherSplitview.List)instance;
+            return that.clouds;
+        }
+        private void set_8_List_clouds(object instance, object Value)
+        {
+            var that = (global::WeatherSplitview.List)instance;
+            that.clouds = (global::WeatherSplitview.Clouds)Value;
+        }
+        private object get_9_List_wind(object instance)
+        {
+            var that = (global::WeatherSplitview.List)instance;
+            return that.wind;
+        }
+        private void set_9_List_wind(object instance, object Value)
+        {
+            var that = (global::WeatherSplitview.List)instance;
+            that.wind = (global::WeatherSplitview.Wind)Value;
+        }
+        private object get_10_List_rain(object instance)
+        {
+            var that = (global::WeatherSplitview.List)instance;
+            return that.rain;
+        }
+        private void set_10_List_rain(object instance, object Value)
+        {
+            var that = (global::WeatherSplitview.List)instance;
+            that.rain = (global::WeatherSplitview.Rain)Value;
+        }
+        private object get_11_List_sys(object instance)
+        {
+            var that = (global::WeatherSplitview.List)instance;
+            return that.sys;
+        }
+        private void set_11_List_sys(object instance, object Value)
+        {
+            var that = (global::WeatherSplitview.List)instance;
+            that.sys = (global::WeatherSplitview.Sys)Value;
+        }
+        private object get_12_List_dt_txt(object instance)
+        {
+            var that = (global::WeatherSplitview.List)instance;
+            return that.dt_txt;
+        }
+        private void set_12_List_dt_txt(object instance, object Value)
+        {
+            var that = (global::WeatherSplitview.List)instance;
+            that.dt_txt = (global::System.String)Value;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
             global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlMember xamlMember = null;
-            // No Local Properties
+            global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlUserType userType;
+
+            switch (longMemberName)
+            {
+            case "WeatherSplitview.WeatherFive.collection":
+                userType = (global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WeatherSplitview.WeatherFive");
+                xamlMember = new global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlMember(this, "collection", "System.Collections.ObjectModel.ObservableCollection`1<WeatherSplitview.List>");
+                xamlMember.Getter = get_0_WeatherFive_collection;
+                xamlMember.Setter = set_0_WeatherFive_collection;
+                break;
+            case "WeatherSplitview.List.dt":
+                userType = (global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WeatherSplitview.List");
+                xamlMember = new global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlMember(this, "dt", "Int32");
+                xamlMember.Getter = get_1_List_dt;
+                xamlMember.Setter = set_1_List_dt;
+                break;
+            case "WeatherSplitview.List.main":
+                userType = (global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WeatherSplitview.List");
+                xamlMember = new global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlMember(this, "main", "WeatherSplitview.Main");
+                xamlMember.Getter = get_2_List_main;
+                xamlMember.Setter = set_2_List_main;
+                break;
+            case "WeatherSplitview.List.weather":
+                userType = (global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WeatherSplitview.List");
+                xamlMember = new global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlMember(this, "weather", "System.Collections.Generic.List`1<WeatherSplitview.Weather>");
+                xamlMember.Getter = get_3_List_weather;
+                xamlMember.Setter = set_3_List_weather;
+                break;
+            case "WeatherSplitview.Weather.id":
+                userType = (global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WeatherSplitview.Weather");
+                xamlMember = new global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlMember(this, "id", "Int32");
+                xamlMember.Getter = get_4_Weather_id;
+                xamlMember.Setter = set_4_Weather_id;
+                break;
+            case "WeatherSplitview.Weather.main":
+                userType = (global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WeatherSplitview.Weather");
+                xamlMember = new global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlMember(this, "main", "String");
+                xamlMember.Getter = get_5_Weather_main;
+                xamlMember.Setter = set_5_Weather_main;
+                break;
+            case "WeatherSplitview.Weather.description":
+                userType = (global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WeatherSplitview.Weather");
+                xamlMember = new global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlMember(this, "description", "String");
+                xamlMember.Getter = get_6_Weather_description;
+                xamlMember.Setter = set_6_Weather_description;
+                break;
+            case "WeatherSplitview.Weather.icon":
+                userType = (global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WeatherSplitview.Weather");
+                xamlMember = new global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlMember(this, "icon", "String");
+                xamlMember.Getter = get_7_Weather_icon;
+                xamlMember.Setter = set_7_Weather_icon;
+                break;
+            case "WeatherSplitview.List.clouds":
+                userType = (global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WeatherSplitview.List");
+                xamlMember = new global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlMember(this, "clouds", "WeatherSplitview.Clouds");
+                xamlMember.Getter = get_8_List_clouds;
+                xamlMember.Setter = set_8_List_clouds;
+                break;
+            case "WeatherSplitview.List.wind":
+                userType = (global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WeatherSplitview.List");
+                xamlMember = new global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlMember(this, "wind", "WeatherSplitview.Wind");
+                xamlMember.Getter = get_9_List_wind;
+                xamlMember.Setter = set_9_List_wind;
+                break;
+            case "WeatherSplitview.List.rain":
+                userType = (global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WeatherSplitview.List");
+                xamlMember = new global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlMember(this, "rain", "WeatherSplitview.Rain");
+                xamlMember.Getter = get_10_List_rain;
+                xamlMember.Setter = set_10_List_rain;
+                break;
+            case "WeatherSplitview.List.sys":
+                userType = (global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WeatherSplitview.List");
+                xamlMember = new global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlMember(this, "sys", "WeatherSplitview.Sys");
+                xamlMember.Getter = get_11_List_sys;
+                xamlMember.Setter = set_11_List_sys;
+                break;
+            case "WeatherSplitview.List.dt_txt":
+                userType = (global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WeatherSplitview.List");
+                xamlMember = new global::WeatherSplitview.WeatherSplitview_XamlTypeInfo.XamlMember(this, "dt_txt", "String");
+                xamlMember.Getter = get_12_List_dt_txt;
+                xamlMember.Setter = set_12_List_dt_txt;
+                break;
+            }
             return xamlMember;
         }
     }

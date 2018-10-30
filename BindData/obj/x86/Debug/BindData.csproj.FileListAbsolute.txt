@@ -1,5 +1,6 @@
 C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\BindData\bin\x86\Debug\App.xbf
 C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\BindData\bin\x86\Debug\MainPage.xbf
+C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\BindData\bin\x86\Debug\View\Drink.xbf
 C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\BindData\bin\x86\Debug\BindData.xr.xml
 C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\BindData\bin\x86\Debug\BindData.exe
 C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\BindData\bin\x86\Debug\BindData.pdb
@@ -127,11 +128,15 @@ C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\BindData\obj\x86\D
 C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\BindData\obj\x86\Debug\App.g.cs
 C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\BindData\obj\x86\Debug\MainPage.g.i.cs
 C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\BindData\obj\x86\Debug\MainPage.g.cs
+C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\BindData\obj\x86\Debug\View\Drink.g.i.cs
+C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\BindData\obj\x86\Debug\View\Drink.g.cs
 C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\BindData\obj\x86\Debug\XamlTypeInfo.g.cs
 C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\BindData\obj\x86\Debug\App.xaml
 C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\BindData\obj\x86\Debug\MainPage.xaml
+C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\BindData\obj\x86\Debug\View\Drink.xaml
 C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\BindData\obj\x86\Debug\App.xbf
 C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\BindData\obj\x86\Debug\MainPage.xbf
+C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\BindData\obj\x86\Debug\View\Drink.xbf
 C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\BindData\obj\x86\Debug\XamlSaveStateFile.xml
 C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\BindData\obj\x86\Debug\BindData.csproj.CoreCompileInputs.cache
 C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\BindData\obj\x86\Debug\BindData.csproj.CopyComplete
@@ -216,8 +221,3 @@ C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\BindData\obj\x86\D
 C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\BindData\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\BindData\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\BindData\obj\x86\Debug\ProjectArchitectures.txt
-C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\BindData\obj\x86\Debug\View\Drink.g.i.cs
-C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\BindData\obj\x86\Debug\View\Drink.g.cs
-C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\BindData\obj\x86\Debug\View\Drink.xaml
-C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\BindData\obj\x86\Debug\View\Drink.xbf
-C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\BindData\bin\x86\Debug\View\Drink.xbf

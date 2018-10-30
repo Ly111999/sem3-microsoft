@@ -122,7 +122,6 @@ C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\WeatherApp\bin\x86
 C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\WeatherApp\bin\x86\Debug\System.Xml.XDocument.dll
 C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\WeatherApp\bin\x86\Debug\System.Xml.XmlDocument.dll
 C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\WeatherApp\bin\x86\Debug\System.Xml.XmlSerializer.dll
-C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\WeatherApp\obj\x86\Debug\WeatherApp.csprojAssemblyReference.cache
 C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\WeatherApp\obj\x86\Debug\App.g.i.cs
 C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\WeatherApp\obj\x86\Debug\App.g.cs
 C:\Users\huong\Documents\Visual Studio 2017\Projects\BindData\WeatherApp\obj\x86\Debug\MainPage.g.i.cs
